@@ -14,7 +14,7 @@ function Welcome() {
       <Services />
       <Testimonials />
       <CTA />
-      <Process />
+      {/* <Process /> */}
     </div>
   );
 }

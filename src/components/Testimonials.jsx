@@ -1,10 +1,4 @@
-import {
-  ClientJS,
-  ClientMD,
-  OurServices,
-  DevAgency,
-  ProcessImage,
-} from "../assets/AssetsFiles";
+import { ClientJS, ClientMD } from "../assets/AssetsFiles";
 
 function Testimonials() {
   return (
@@ -24,7 +18,7 @@ function Testimonials() {
               </div>
             </div>
             <p className="italic">
-              "DevAgency transformed our online presence. Their team understood
+              "CodeNation transformed our online presence. Their team understood
               our vision perfectly and delivered a product that exceeded our
               expectations. Our user engagement is up 50%!"
             </p>
@@ -38,7 +32,7 @@ function Testimonials() {
               </div>
             </div>
             <p className="italic">
-              "Working with DevAgency was a breeze. They are professional,
+              "Working with CodeNation was a breeze. They are professional,
               responsive, and incredibly skilled. They built us a complex
               e-commerce platform that is both fast and secure."
             </p>

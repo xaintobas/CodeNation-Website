@@ -1,9 +1,5 @@
 function Process() {
-  return (
-    <header>
-      <div>Process</div>
-    </header>
-  );
+  return <div>hello</div>;
 }
 
 export default Process;

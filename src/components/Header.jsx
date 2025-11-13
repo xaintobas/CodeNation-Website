@@ -1,36 +1,22 @@
 import { useState } from "react";
+import { DarkLogo } from "./Logo.jsx";
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    {
-      name: "Welcome",
-      href: "/",
-    },
-    {
-      name: "Who We Are",
-      href: "/who-we-are",
-    },
-    {
-      name: "What We Do",
-      href: "/what-we-do",
-    },
-    {
-      name: "Learn",
-      href: "/learn",
-    },
-    {
-      name: "Connect",
-      href: "/connect",
-    },
+    { name: "Welcome", href: "/" },
+    { name: "Who We Are", href: "/who-we-are" },
+    { name: "What We Do", href: "/what-we-do" },
+    { name: "Learn", href: "/learn" },
+    { name: "Connect", href: "/connect" },
   ];
 
   return (
     <header className="header">
       <nav className="container">
         <div className="nav-content">
-          {/* <img src="" alt="" /> */}
-          <p className="logo">CodeNation</p>
+          <DarkLogo />
           <div className="nav-links desktop-only">
             {navLinks.map((link) => (
               <a key={link.name} href={link.href}>
@@ -47,7 +33,7 @@ function Header() {
         </div>
         <div
           className={
-            isMenuOpen ? "block nav-links mobile-only flex" : "hidden flex"
+            isMenuOpen ? "mobile-nav-links mobile-only flex" : "hidden"
           }
         >
           {navLinks.map((link) => (
